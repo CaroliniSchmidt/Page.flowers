@@ -1,0 +1,184 @@
+* {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    nav {
+        margin-top: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 5px;
+    }
+
+    main {
+        margin: 160px 40px;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    body {
+        width: auto;
+        height: auto;
+    }
+}
+
+:root {
+    --cor1: #F8F5F1;
+    --cor2: rgb(35, 93, 93);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#logo {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    padding: 0;
+}
+
+img {
+    width: 50vh;
+}
+
+body {
+    margin-top: 120px;
+}
+
+header {
+    width: 100vw;
+    height: auto;
+    min-height: 75px;
+    padding: 0px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: fixed;
+    background-color: var(--cor1);
+    top: 0;
+}
+
+main {
+    margin: 20px;
+    text-align: justify;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2em;
+    justify-content: center;
+    align-items: stretch;
+    padding: 50px;
+
+}
+
+nav li,
+#submit {
+    padding: 1em 2em;
+    margin: 0.5em;
+    list-style-type: none;
+    display: block;
+    float: left;
+    transition: .30s;
+    cursor: pointer;
+}
+
+nav li,
+#submit:hover,
+nav li,
+#submit:focus {
+    border-color: var(--cor2);
+}
+
+.raise:hover,
+.raiser:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em rgb(35, 93, 93);
+    transform: translateY(-0.25em);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+hr {
+    margin: 10px;
+}
+
+h1 {
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    margin-top: 10px;
+    font-size: 2em;
+}
+
+.galery {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 15px;
+    margin: 5px;
+    justify-content: center;
+}
+
+.foto {
+    padding: 5px;
+    margin: 10px;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.caixa-foto {
+    border: 1px solid;
+    margin: 1em;
+    padding: 1em;
+}
+
+.video {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 5px;
+    margin: 10px;
+
+}
+
+#sub-title {
+    text-align: center;
+}
+
+#form {
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#email {
+    height: 40px;
+}
+
+footer {
+    padding: 30px;
+    margin: 50px;
+    background-image: url(imagens/flower\ base.jpg);
+    color: #F8F5F1;
+    text-align: center;
+}
